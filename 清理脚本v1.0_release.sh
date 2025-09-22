@@ -30,6 +30,9 @@ sleep 1
 show_menu() {
     echo "========================================"
     echo "          XrQlzero v1.0 一键清理"
+    echo "Android版本: $(getprop ro.build.version.release)"
+    echo "设备型号: $(getprop ro.product.model)"
+    echo "制造商: $(getprop ro.product.manufacturer)"
     echo "========================================"
     echo "本项目地址:https://github.com/xiaoren-QAQ/XrQlzero"
     echo " 1) 完全清理"
@@ -40,7 +43,7 @@ show_menu() {
     echo " 6) 重启"
     echo "========================================"
     echo ""
-    printf "请输入选项 (1-5): "
+    printf "请输入选项 (1-6): "
 }
 
 
